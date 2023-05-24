@@ -1,0 +1,321 @@
+/*------ Fonts ------*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,200;1,300;1,400&display=swap');
+
+/*------ Animations ------*/
+
+/*------ Genrelle regler ------*/
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e9e5d6;
+    font-family: "nunito sans";
+}
+
+/*------ Styling af header og navigation ------*/
+header {
+    background-color:  #ACB992;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5% 1% 0;
+}
+
+#logoheader img {
+    width: 78%;
+}
+
+#burger {
+    display: none;
+}
+
+a {
+    font-size: 1em;
+    color: rgba(28, 28, 28, 0.964);
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: rgb(42, 41, 41);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.header-button {
+    background-color: #e9e5d6;
+    padding: 10px 25px 10px 25px;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.header-button:hover {
+    background-color: #ecdeac;
+    text-decoration: none;
+    padding: 12px 27px 12px 27px;
+    
+}
+
+nav #active-page {
+    text-decoration: underline;
+}
+
+/*------ Styling af main content: Forside ------*/
+
+#heroimg {
+    width: 100%;
+}
+
+.main-button {
+    background-color: #ACB992;
+    padding: 10px 25px 10px 25px;
+    border-radius: 20px;
+}
+
+.main-button:hover {
+    background-color: #97a678;
+    text-decoration: none;
+}
+
+.img-text-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5%;
+}
+
+.box-image {
+    width: 50%;
+}
+
+.centreret-text-right {
+    width: 50%;
+    text-align: center;
+    padding: 5% 0% 5% 5%;
+   
+}
+
+.line {
+    width: 100%;
+    margin: 20px 0 20px 0;
+}
+
+.kort-holder {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5%;
+}
+
+.kort {
+    text-align: center;
+}
+
+.kort img {
+    width: 80%;
+    padding: 20px 20px 60px 20px;
+    transition: 1s;
+}
+
+.kort img:hover {
+    width: 83%;
+}
+
+/*------ Styling af underside content ------*/
+.imgcontainer {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.underside-img {
+    width: 100%;
+}
+
+.underside-tekst {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: #acb992cc;
+    padding: 2% 5%;
+    margin: -12% 10% 10% 10%;
+    position: relative;
+    z-index: 1;
+    transition: 1s;
+}
+
+.centreret-text-left {
+    width: 50%;
+    text-align: center;
+    padding: 5% 5% 5% 0%;
+   
+}
+
+.kort-holder-img {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3%;
+}
+
+.kort-holder-img img {
+    width: 30%;
+}
+
+/*------ Styling af text ------*/
+p {
+    margin: 50px 0 70px 0;
+}
+
+.lefttext {
+    text-align: left;
+}
+
+.underside-tekst h1{
+    text-align: center;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 2em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*------ Styling af Footer ------*/
+
+footer {
+    background-color: #ACB992;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    color: #575e48;
+}
+
+#socialicons {
+    height: auto;
+}
+.socialicon {
+    height: 2em;
+    margin-top: 10px;
+    transition: 1s;
+}
+
+.socialicon:hover {
+    height: 2.3em;
+    
+}
+
+footer a {
+    color: #444939f4;
+}
+
+#footer-logo {
+    width: 25%;
+    height: 25%;
+    padding-top: 20px;
+}
+
+/*------ Mobil ------*/
+@media only screen and (max-width: 750px){ 
+    
+    /*------ Header ------*/
+    .menupunkt {
+        display: none;
+    }
+
+    .header-button {
+        display: none;
+    }
+
+    #burger {
+        display: block;
+    }
+
+    #burgerclose {
+        width: 40px;
+        
+    }
+
+    #logoheader {
+        max-width: 70%;
+    }
+
+    .burgermenu {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 30px;
+    }
+
+    /*------ Main content ------*/
+   .box-image {
+        width: 100%;
+        margin-bottom: 50px;
+   }
+
+   .kort img {
+    width: 100%;
+   }
+
+   .kort .marginimg {
+        margin-top: 100px;
+   }
+
+   .centreret-text-right {
+        width: 100%;
+   }
+
+   .centreret-text-left {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+   .kort-holder {
+        flex-direction: column;
+   }
+
+   .kort-holder-img {
+        flex-direction: column;
+   }
+
+   #reverse-box {
+    display: flex;
+    flex-direction: column-reverse;
+   }
+
+   .kort-holder-img img {
+        width: 100%;
+        padding: 15px;
+   }
+
+   
+
+   /*------ Footer ------*/
+   footer {
+        margin-top: 100px;
+   }
+
+   footer ul li {
+    font-size: 10px;
+   }
+   .socialicon {
+        height: 1em;
+        margin-top: 8px;
+    }
+
+    #footer-logo {
+        padding-top: 5px;
+    }
+    
+}
